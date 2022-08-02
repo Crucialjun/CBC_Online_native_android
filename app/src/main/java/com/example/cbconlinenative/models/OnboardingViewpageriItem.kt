@@ -1,4 +1,4 @@
-package com.example.cbconlinenative.adapters.models
+package com.example.cbconlinenative.models
 
 data class OnboardingViewpageriItem(
     val title : String,
