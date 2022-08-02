@@ -2,6 +2,7 @@ package com.example.cbconlinenative
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.cbconlinenative.adapters.OnboardingViewpagerAdapter
 import com.example.cbconlinenative.databinding.ActivityOnboardingBinding
 
 class OnboardingActivity : AppCompatActivity() {
@@ -12,6 +13,8 @@ class OnboardingActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.txtAppName.text = GlobalConstants.APP_NAME
+
+        binding.onboardingViewpager.adapter = OnboardingViewpagerAdapter(this)
     }
 
 
