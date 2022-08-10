@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/C-Jay/StudioProjects/CBC_Online_native_android/app/src/main/res/drawable-v24/dot_default.xml" value="0.2985" />
+        <entry key="..\:/Users/C-Jay/StudioProjects/CBC_Online_native_android/app/src/main/res/drawable/dot_selected.xml" value="0.2985" />
         <entry key="..\:/Users/C-Jay/StudioProjects/CBC_Online_native_android/app/src/main/res/drawable/pageone.xml" value="0.2125" />
+        <entry key="..\:/Users/C-Jay/StudioProjects/CBC_Online_native_android/app/src/main/res/drawable/tab_selector.xml" value="0.2985" />
         <entry key="..\:/Users/C-Jay/StudioProjects/CBC_Online_native_android/app/src/main/res/layout/activity_onboarding.xml" value="0.34479166666666666" />
         <entry key="..\:/Users/C-Jay/StudioProjects/CBC_Online_native_android/app/src/main/res/layout/onboarding_viewpager_layout.xml" value="0.34375" />
       </map>

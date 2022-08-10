@@ -2,8 +2,11 @@ package com.example.cbconlinenative
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import com.example.cbconlinenative.adapters.OnboardingViewpagerAdapter
 import com.example.cbconlinenative.databinding.ActivityOnboardingBinding
+import com.google.android.material.tabs.TabLayout
+import com.google.android.material.tabs.TabLayoutMediator
 
 class OnboardingActivity : AppCompatActivity() {
     private lateinit var binding: ActivityOnboardingBinding
@@ -15,6 +18,10 @@ class OnboardingActivity : AppCompatActivity() {
         binding.txtAppName.text = GlobalConstants.APP_NAME
 
         binding.onboardingViewpager.adapter = OnboardingViewpagerAdapter(this)
+
+        TabLayoutMediator(binding.tabLayout,binding.onboardingViewpager){tab,position ->
+
+        }.attach()
     }
 
 

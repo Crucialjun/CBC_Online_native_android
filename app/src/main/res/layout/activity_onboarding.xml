@@ -35,6 +35,9 @@
         app:layout_constraintGuide_end="16dp" />
 
     <TextView
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/main_blue"
         android:id="@+id/txt_app_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -47,10 +50,14 @@
         tools:text="TextView" />
 
     <Button
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textColor="@color/subtle_blue"
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="@string/skip"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintHorizontal_bias="0.5"
@@ -58,25 +65,34 @@
         app:layout_constraintTop_toTopOf="@+id/guideline4" />
 
     <androidx.viewpager2.widget.ViewPager2
+
         android:id="@+id/onboarding_viewpager"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/tabLayout"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toBottomOf="@+id/button" />
 
     <Button
+        app:cornerRadius="0dp"
+        style="?attr/materialButtonOutlinedStyle"
+        app:strokeWidth="2dp"
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:text="I already have an account"
+        android:textColor="@color/main_blue"
+        app:strokeColor="@color/main_blue"
         app:layout_constraintBottom_toTopOf="@+id/guideline5"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintStart_toStartOf="@+id/guideline2" />
 
     <Button
+        app:backgroundTint="@color/main_blue"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -85,4 +101,19 @@
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintStart_toStartOf="@+id/guideline2" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:background="@null"
+        android:id="@+id/tabLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:tabBackground="@drawable/tab_selector"
+        app:tabIndicatorGravity="center"
+        app:tabIndicatorHeight="0dp">
+
+
+    </com.google.android.material.tabs.TabLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

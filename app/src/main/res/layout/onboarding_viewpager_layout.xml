@@ -17,17 +17,23 @@
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
-        android:textSize="24sp"
-        android:textStyle="bold"
         android:id="@+id/viewpager_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/viewpager_description"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:text="Title" />
 
     <TextView
+        android:textColor="@android:color/darker_gray"
+        android:lineSpacingExtra="10sp"
+        android:elegantTextHeight="true"
+        android:textAlignment="center"
         android:id="@+id/viewpager_description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
