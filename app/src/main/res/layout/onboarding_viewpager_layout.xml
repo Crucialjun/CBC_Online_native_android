@@ -17,11 +17,12 @@
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
+        android:textAlignment="center"
         android:id="@+id/viewpager_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
-        android:textSize="24sp"
+        android:textSize="28sp"
         android:textStyle="bold"
         android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/viewpager_description"

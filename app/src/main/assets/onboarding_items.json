@@ -1,27 +1,27 @@
 [
   {
-    "title": "Respiro",
-    "description": "Adverse effect of unspecified systemic antibiotic, subsequent encounter",
+    "title": "Easy Peasy CBC Materials",
+    "description": "The app makes it easy to find and download CBC print-ready materials",
     "imageUrl": "pageone"
   },
   {
-    "title": "Moon Zero Two",
-    "description": "Blister (nonthermal) of abdomen, lower back, pelvis and external genitals",
+    "title": "Higher Level of Learning",
+    "description": "Climb to higher levels of learning with well curated content on the app",
     "imageUrl": "pagetwo"
   },
   {
-    "title": "Red Sands",
-    "description": "Fracture of unspecified phalanx of other finger",
+    "title": "Incorporating Content from Books and the Web",
+    "description": "The curated content offer a mix of both book materials and web materials for students to learn from",
     "imageUrl": "pagethree"
   },
   {
-    "title": "American Bandits: Frank and Jesse James",
-    "description": "Excessive weight gain in pregnancy, first trimester",
+    "title": "No more headaches",
+    "description": "Now you no longer need to use a lot of resources to research CBC materials as all the requires content has been researched for you",
     "imageUrl": "pagefour"
   },
   {
-    "title": "SIS",
-    "description": "Corrosion of second degree of right elbow, sequela",
+    "title": "Get Started",
+    "description": "Get started with the app and start downloading curated CBC materials",
     "imageUrl": "pagefive"
   }
 ]

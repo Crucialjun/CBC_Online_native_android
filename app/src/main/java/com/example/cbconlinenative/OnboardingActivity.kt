@@ -19,6 +19,10 @@ class OnboardingActivity : AppCompatActivity() {
 
         binding.onboardingViewpager.adapter = OnboardingViewpagerAdapter(this)
 
+        binding.btnOnboardingSkip.setOnClickListener {
+            binding.onboardingViewpager.setCurrentItem(5,false)
+        }
+
         TabLayoutMediator(binding.tabLayout,binding.onboardingViewpager){tab,position ->
 
         }.attach()
