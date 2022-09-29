@@ -26,13 +26,65 @@
         </TextView>
 
         <androidx.appcompat.widget.LinearLayoutCompat
-            android:orientation="horizontal"
+            android:id="@+id/lnrlayout_facebook"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/linearLayoutCompat"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/txt_signup">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/facebook_icon">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Facebook">
+
+            </TextView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linearLayoutCompat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/lnrlayout_facebook"
+            app:layout_constraintTop_toBottomOf="@id/txt_signup">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/facebook_icon">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Facebook">
+
+            </TextView>
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
