@@ -38,6 +38,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/txt_signup">
 
+
             <ImageView
                 android:layout_width="32dp"
                 android:layout_height="32dp"
@@ -47,7 +48,9 @@
 
             </ImageView>
 
+
             <TextView
+                android:layout_marginStart="4dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
