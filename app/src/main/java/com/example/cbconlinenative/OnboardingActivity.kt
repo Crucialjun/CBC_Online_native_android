@@ -31,6 +31,13 @@ class OnboardingActivity : AppCompatActivity() {
 
         }
 
+        binding.btnOnboardingSignin.setOnClickListener {
+            val intent  = Intent(this,SignupActivity::class.java)
+            intent.flags= Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK
+            startActivity(intent)
+            finish()
+        }
+
         TabLayoutMediator(binding.tabLayout,binding.onboardingViewpager){tab,position ->
 
         }.attach()
