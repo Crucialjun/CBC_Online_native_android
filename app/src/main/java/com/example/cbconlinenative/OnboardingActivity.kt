@@ -1,11 +1,10 @@
 package com.example.cbconlinenative
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
-import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import com.example.cbconlinenative.adapters.OnboardingViewpagerAdapter
 import com.example.cbconlinenative.databinding.ActivityOnboardingBinding
-import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 
 class OnboardingActivity : AppCompatActivity() {
@@ -21,6 +20,15 @@ class OnboardingActivity : AppCompatActivity() {
 
         binding.btnOnboardingSkip.setOnClickListener {
             binding.onboardingViewpager.setCurrentItem(5,false)
+        }
+
+        binding.btnOnboardingSignup.setOnClickListener {
+            val intent  = Intent(this,SignupActivity::class.java)
+            intent.flags= Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK
+            startActivity(intent)
+            finish()
+
+
         }
 
         TabLayoutMediator(binding.tabLayout,binding.onboardingViewpager){tab,position ->
